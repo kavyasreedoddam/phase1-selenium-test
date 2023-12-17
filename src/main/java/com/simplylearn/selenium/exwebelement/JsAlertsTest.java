@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+
 public class JsAlertsTest {
 
 	static WebDriver driver;
@@ -55,6 +56,7 @@ public class JsAlertsTest {
 		Alert alert = driver.switchTo().alert();
 
 		String expText = "Do you really want to proceed ??";
+		
 		if (expText.equals(alert.getText())) {
 			System.out.println("Test is passed !");
 		} else {
@@ -140,7 +142,7 @@ public class JsAlertsTest {
 
 		String expText = "Please enter your name.";
 		
-		propmt.sendKeys("John Smith");
+		propmt.sendKeys("kavya");
 		
 		if (expText.equals(propmt.getText())) {
 			System.out.println("Test is passed !");
